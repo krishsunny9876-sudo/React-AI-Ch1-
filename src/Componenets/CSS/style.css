@@ -1,11 +1,45 @@
-*{
+* {
     padding: 0;
     margin: 0;
 }
 
-.navbar{
+.navbar {
     display: flex;
     background-color: purple;
     color: white;
-    box-shadow: 0px 2px 2px black;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.619);
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li {
+    margin-left: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.navbar ul li:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: rgb(165, 114, 42);
+}
+
+.navbar h2 {
+    font-size: 30px;
+}
+
+.headings{
+    margin-top: 100px;
+    width: 100vw;
+    justify-items: center;
+    font-size: 30px;
 }
