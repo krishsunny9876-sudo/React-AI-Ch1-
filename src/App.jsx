@@ -11,8 +11,14 @@ import {
 function App() {
 
   const [count, setCount] = useState(0)
+  const [complete_count, setcomplete_count] = useState(0)
+
   const increament_count = () => {
     setCount(prev => prev + 1);
+  }
+
+  const decreament_count = () => {
+    setcomplete_count(prev => prev + 1);
   }
 
   return (
