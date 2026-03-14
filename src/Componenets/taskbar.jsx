@@ -11,6 +11,15 @@ export default function My_Page() {
                 <div className="block">
                     <input type="text" placeholder='Task Name' />
                     <button className='add_btn'>Add</button>
+                    <div className="tasks">
+                        <hr />
+                        <h5>Task List</h5>
+                        <div className="task_list">
+                            <div className="task_div">
+                                <input type="checkbox" id='checks' /><h3>My Task Here</h3>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
