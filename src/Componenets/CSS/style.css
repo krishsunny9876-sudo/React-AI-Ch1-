@@ -120,6 +120,15 @@
     margin: 10px;
 }
 
+.task_div h3 {
+    width: 50%;
+    height: 50px;
+    overflow-x: auto;
+    overflow-y: auto;
+    justify-items: center;
+    align-content: center;
+}
+
 #checks {
     width: 20px;
     height: 20px;

@@ -29,10 +29,11 @@ export default function My_Page() {
 
             let buttun = document.createElement('button');
             buttun.setAttribute('id', 'delete_task');
+            buttun.innerHTML = "Delete"; 
             task_div.appendChild(buttun);
 
             task_list.appendChild(task_div);
-            
+
             setTaskname(null);
             SetName_input.value = '';
         }
