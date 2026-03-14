@@ -13,6 +13,7 @@ function App() {
   const [count, setCount] = useState(0)
   const increament_count = () => {
     setCount(count + 1);
+    console.log(count);
   }
   return (
     <Router>
