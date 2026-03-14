@@ -2,7 +2,7 @@ import './CSS/style.css'
 import './CSS/container.css'
 import { useState } from 'react'
 
-export default function My_Page() {
+export default function My_Page({ count }) {
     let SetName_input = document.querySelector('#taskname_input');
     let task_list = document.querySelector('.task_list');
 
@@ -34,6 +34,7 @@ export default function My_Page() {
 
             task_list.appendChild(task_div);
 
+            count();
             setTaskname(null);
             SetName_input.value = '';
         }

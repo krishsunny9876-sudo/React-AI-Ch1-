@@ -11,7 +11,9 @@ import {
 function App() {
 
   const [count, setCount] = useState(0)
-
+  const increament_count = () => {
+    setCount(count + 1);
+  }
   return (
     <Router>
 
@@ -19,7 +21,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/taskbar" element={<Taskbar />} />
+        <Route path="/taskbar" element={<Taskbar count={increament_count} />} />
       </Routes>
 
     </Router>
