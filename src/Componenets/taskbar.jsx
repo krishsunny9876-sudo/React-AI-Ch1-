@@ -14,7 +14,6 @@ export default function My_Page() {
 
     const add_NewTask = () => {
         if (taskname) {
-            console.log(taskname);
             let task_div = document.createElement('div');
             task_div.setAttribute('class', 'task_div');
 
@@ -29,7 +28,7 @@ export default function My_Page() {
 
             let buttun = document.createElement('button');
             buttun.setAttribute('id', 'delete_task');
-            buttun.setAttribute("onclick", "delete_btn()");
+            buttun.addEventListener("click", delete_btn);
             buttun.innerHTML = "Delete";
             task_div.appendChild(buttun);
 
