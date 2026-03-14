@@ -29,7 +29,8 @@ export default function My_Page() {
 
             let buttun = document.createElement('button');
             buttun.setAttribute('id', 'delete_task');
-            buttun.innerHTML = "Delete"; 
+            buttun.setAttribute("onclick", "delete_btn()");
+            buttun.innerHTML = "Delete";
             task_div.appendChild(buttun);
 
             task_list.appendChild(task_div);
@@ -37,6 +38,10 @@ export default function My_Page() {
             setTaskname(null);
             SetName_input.value = '';
         }
+    }
+
+    const delete_btn = (e) => {
+        (e.target.parentElement).remove();
     }
 
     return (
@@ -51,7 +56,7 @@ export default function My_Page() {
                         <h5>Tasks List</h5>
                         <div className="task_list">
                             <div className="task_div">
-                                <input type="checkbox" id='checks' /><h3>My Task Here</h3><button id='delete_task'>Delete</button>
+                                <input type="checkbox" id='checks' /><h3>My Task Here</h3><button id='delete_task' onClick={delete_btn}>Delete</button>
                             </div>
                         </div>
                     </div>

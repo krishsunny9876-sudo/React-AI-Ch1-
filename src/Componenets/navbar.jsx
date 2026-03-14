@@ -6,7 +6,6 @@ import {
 
 export default function My_Page() {
 
-
     return (
 
         <nav className="navbar open-sans">
