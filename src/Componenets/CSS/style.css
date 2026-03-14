@@ -77,6 +77,7 @@
 }
 
 .area .block button {
+    cursor: pointer;
     width: 50px;
     height: 32px;
     margin: 30px 5px;
