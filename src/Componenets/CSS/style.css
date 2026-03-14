@@ -126,7 +126,7 @@
     overflow-x: auto;
     overflow-y: auto;
     justify-items: center;
-    text-align: center;
+    align-content: center;
 }
 
 #checks {
