@@ -99,15 +99,24 @@
 }
 
 .task_list {
-    text-align: center;
+    width: 100%;
+    justify-items: center;
 }
 
 .task_div {
     display: flex;
     font-size: 15px;
     justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(210, 238, 255);
+    height: 50px;
+    width: 90%;
+    border-radius: 5px;
+    margin: 10px;
 }
-.task_div input{
-    width: 10px;
-    height: 10px;
+
+#checks {
+    width: 20px;
+    height: 20px;
 }

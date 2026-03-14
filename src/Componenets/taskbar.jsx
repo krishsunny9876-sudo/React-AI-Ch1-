@@ -16,7 +16,7 @@ export default function My_Page() {
                         <h5>Task List</h5>
                         <div className="task_list">
                             <div className="task_div">
-                                <input type="checkbox" id='checks' /><h3>My Task Here</h3>
+                                <input type="checkbox" id='checks' /><h3>My Task Here</h3><button>Delete</button>
                             </div>
                         </div>
                     </div>
