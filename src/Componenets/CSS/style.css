@@ -98,6 +98,10 @@
     text-align: left;
 }
 
+.tasks h5 {
+    margin-left: 10px;
+}
+
 .task_list {
     width: 100%;
     justify-items: center;
