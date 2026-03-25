@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Navbar from './Componenets/navbar'
 import HomePage from './Componenets/home'
 import Taskbar from './Componenets/taskbar'
+import Statsbar from './Componenets/stats'
 import {
   BrowserRouter as Router,
   Routes,
@@ -29,6 +30,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/taskbar" element={<Taskbar count={increament_count} />} />
+        <Route path="/statsbar"element={<Statsbar/>}/>
       </Routes>
 
     </Router>

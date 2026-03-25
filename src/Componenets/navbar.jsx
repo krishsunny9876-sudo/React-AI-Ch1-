@@ -13,7 +13,7 @@ export default function My_Page() {
             <ul>
                 <li><Link to={'/'} className='normalisation'>Home</Link></li>
                 <li><Link to={'/taskbar'} className='normalisation'>Tasks</Link></li>
-                <li>Stats</li>
+                <li><Link to={'/statsbar'} className='normalisation'>Stats</Link></li>
             </ul>
         </nav>
 
