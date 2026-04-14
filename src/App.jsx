@@ -23,14 +23,12 @@ function App() {
   }
 
   return (
-    <Router>
-
+    <Router basename="/React-AI-Ch1-">
       <Navbar />
-
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/taskbar" element={<Taskbar count={increament_count} />} />
-        <Route path="/statsbar"element={<Statsbar/>}/>
+        <Route path="/statsbar" element={<Statsbar />} />
       </Routes>
 
     </Router>
