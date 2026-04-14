@@ -3,11 +3,11 @@ import Navbar from './Componenets/navbar'
 import HomePage from './Componenets/home'
 import Taskbar from './Componenets/taskbar'
 import Statsbar from './Componenets/stats'
-// import {
-//   BrowserRouter as Router,
-//   Routes,
-//   Route
-// } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 
 function App() {
 
@@ -23,18 +23,17 @@ function App() {
   }
 
   return (
-    // <Router>
+    <Router>
 
-    //   <Navbar />
+      <Navbar />
 
-    //   <Routes>
-    //     <Route path="/" element={<HomePage />} />
-    //     <Route path="/taskbar" element={<Taskbar count={increament_count} />} />
-    //     <Route path="/statsbar"element={<Statsbar/>}/>
-    //   </Routes>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/taskbar" element={<Taskbar count={increament_count} />} />
+        <Route path="/statsbar"element={<Statsbar/>}/>
+      </Routes>
 
-    // </Router>
-    <Navbar />
+    </Router>
   );
 }
 
