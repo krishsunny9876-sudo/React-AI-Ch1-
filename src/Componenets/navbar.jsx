@@ -1,8 +1,8 @@
 import './CSS/style.css'
 import './CSS/container.css'
-import {
-    Link
-} from "react-router-dom";
+// import {
+//     Link
+// } from "react-router-dom";
 
 export default function My_Page() {
 
@@ -11,9 +11,12 @@ export default function My_Page() {
         <nav className="navbar open-sans">
             <h2>Welcome</h2>
             <ul>
-                <li><Link to={'/'} className='normalisation'>Home</Link></li>
+                {/* <li><Link to={'/'} className='normalisation'>Home</Link></li>
                 <li><Link to={'/taskbar'} className='normalisation'>Tasks</Link></li>
-                <li><Link to={'/statsbar'} className='normalisation'>Stats</Link></li>
+                <li><Link to={'/statsbar'} className='normalisation'>Stats</Link></li> */}
+                <li>Home</li>
+                <li>Tasks</li>
+                <li>Stats</li>
             </ul>
         </nav>
 
